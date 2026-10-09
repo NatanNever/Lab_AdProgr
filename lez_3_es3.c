@@ -6,18 +6,18 @@ Then write the program which takes a temperature in °F in input, converts it in
 #include <stdlib.h>
 #include <math.h>
 int main() {
-    int Tc;
-    int Tf;
+    float Tc;
+    float Tf;
     printf("inserisci Temperatura in Celsius: ");
-    scanf("%d", &Tc);
+    scanf("%f", &Tc);
     printf("Converto Celsius in Fahrenheit\n");
     Tf=(9*Tc)/5+32;
-    printf("Tc: %d => Tf: %d\n", Tc,Tf);
+    printf("Tc: %f => Tf: %f\n", Tc,Tf);
 
     printf("inserisci Temperatura in Fahrenheit: ");
-    scanf("%d", &Tf);
+    scanf("%f", &Tf);
     printf("Converto Fahrenheit in Celsius\n");
     Tc=(Tf-32)*5/9;
-    printf("Tf: %d => Tc: %d\n", Tf,Tc);
+    printf("Tf: %f => Tc: %f\n", Tf,Tc);
     return 0;
 }
